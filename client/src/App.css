@@ -52,3 +52,16 @@ button {
 li {
   list-style-type: none;
 }
+
+/* ESTILOS DE LA NOTIDICAION */
+
+/* Cambia el color del fondo del toast*/
+.Toastify__toast {
+  background-color: var(--color-siena-tostado) !important;
+  color: white !important;
+}
+
+/* Cambia el color de la barrita del toast*/
+.Toastify__toast .Toastify__progress-bar {
+  background: var(--color-vara-de-oro) !important;
+}

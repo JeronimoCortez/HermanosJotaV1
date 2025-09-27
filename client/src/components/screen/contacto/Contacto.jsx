@@ -1,20 +1,18 @@
-import ContactForm from '../../ui/contacto/ContactForm'
 import "./contacto.css"
+import HeroProductoContacto from '../../ui/hero-producto-contacto/HeroProductoContacto'
+import ContactForm from '../../ui/contacto/ContactForm'
 import ContactInfo from '../../ui/contacto/ContactInfo'
 import ContactUbicacion from '../../ui/contacto/ContactUbicacion'
+import Footer from '../../ui/footer/Footer'
 
 function Contacto() {
   return (
     <>
       {/* nav */}
       <main>
-        <div className="hero-contacto">
-          <h1 className="hero-title">Contáctanos</h1>
-          <p className="hero-subtitle">
-            Estamos aquí para ayudarte a encontrar los muebles perfectos para tu
-            hogar
-          </p>
-        </div>
+        <HeroProductoContacto title="Contáctanos"
+          subtitle="Estamos aquí para ayudarte a encontrar los muebles perfectos para tu hogar"
+        />
 
         <section className='contacto'>
           <ContactForm />
@@ -22,9 +20,9 @@ function Contacto() {
           <ContactUbicacion />
         </section>
       </main>
-      {/* Footer */}
+      <Footer />
     </>
   )
 }
 
-export default Contacto
+export default Contacto;

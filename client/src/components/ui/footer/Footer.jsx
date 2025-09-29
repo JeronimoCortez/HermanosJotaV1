@@ -2,14 +2,15 @@ import './footer.css'
 import { FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import NavLinks from '../navbar/NavLinks';
 
-const Footer = () => {
+const Footer = ({setPagina}) => {
     return (
         <footer>
             <section className="footer-info">
                 <a href="/">
                     <img
-                        src="/logo-blanco.svg"
+                        src="/assets/logo-blanco.svg"
                         alt="Logo Mueblería Hermanos Jota"
                         width="100"
                     />
@@ -40,16 +41,12 @@ const Footer = () => {
                 </address>
             </section>
 
-            <section class="footer-nav">
+            <section className="footer-nav">
                 <nav>
-                    <ul>
-                        <li><a href="/">INICIO</a></li>
-                        <li><a href="/productos">PRODUCTOS</a></li>
-                        <li><a href="/contacto">CONTACTO</a></li>
-                    </ul>
+                    <NavLinks mostrarPagina={setPagina}/>
                 </nav>
 
-                <p class="footer-copy">
+                <p className="footer-copy">
                     &copy; 2025 Mueblería Hermanos Jota. Todos los derechos reservados.
                 </p>
             </section>

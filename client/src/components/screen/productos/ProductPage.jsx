@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import FiltrosSection from "../../ui/productos/FiltrosSection";
 import ProductList from "../../ui/productos/ProductList";
 import "./productos.css";
+import HeroProductoContacto from "../../ui/hero-producto-contacto/HeroProductoContacto";
 
 const productos = [
   {
@@ -219,13 +220,8 @@ const ProductPage = ({ loading, setPagina, setId }) => {
 
   return (
     <>
-      <div className="hero-productos">
-        <h1 className="hero-title">Nuestros Productos</h1>
-        <p className="hero-subtitle">
-          Descubre nuestra coleccion completa de muebles premium para cada
-          espacio de tu hogar
-        </p>
-      </div>
+      <HeroProductoContacto title={"Nuestros productos"} subtitle={"Descubre nuestra coleccion completa de muebles premium para cada espacio de tu hogar"} />
+
       <main id="lista-productos" className="productos">
         <div className="productos-vista">
           <FiltrosSection onFiltrar={onFiltrar} />

@@ -20,7 +20,6 @@ function Contacto() {
           <ContactUbicacion />
         </section>
       </main>
-      <Footer />
     </>
   )
 }

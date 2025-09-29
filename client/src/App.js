@@ -1,5 +1,5 @@
 import "./App.css";
-import ProductPage from "../src/components/screen/ProductPage";
+import ProductPage from "../src/components/screen/productos/ProductPage";
 import { useState } from "react";
 import Navbar from "./components/ui/navbar/Navbar";
 

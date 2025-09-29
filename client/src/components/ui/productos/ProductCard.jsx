@@ -1,0 +1,17 @@
+const ProductCard = ({ producto, verProductoDetalle }) => {
+  return (
+    <article
+      className="productos-item"
+      onClick={(e) => verProductoDetalle(e, producto.id)}
+    >
+      <img src={`/assets/${producto.img}`} alt={producto.nombre} />
+      <div className="productos-descripcion">
+        <h3>{producto.nombre}</h3>
+        <p>{`$${producto.precio}`}</p>
+        <button className="ver-btn">Comprar</button>
+      </div>
+    </article>
+  );
+};
+
+export default ProductCard;

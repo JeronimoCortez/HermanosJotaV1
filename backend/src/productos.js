@@ -1,5 +1,5 @@
 // catalogo de productos
-const productos = [
+export const products = [
   {
     id: 1,
     nombre: "Aparador Uspallata",
@@ -25,7 +25,7 @@ const productos = [
     capacidad: "45 kg por estante",
     modulares: "5 estantes ajustables",
     precio: 1500,
-    img: "./assets/bibliotecaRecoleta.png",
+    img: "https://ibb.co/53c14mr",
     categoria: "sala",
   },
   {
@@ -39,7 +39,7 @@ const productos = [
     tapizado: "Repelente al agua y manchas",
     confort: "Espuma alta densidad",
     precio: 1000,
-    img: "./assets/butacaMendoza.png",
+    img: "https://ibb.co/Wv26DMT2",
     categoria: "sala",
   },
   {
@@ -53,7 +53,7 @@ const productos = [
     rotación: "360° silenciosa y suave",
     garantía: "10 años en estructura",
     precio: 1600,
-    img: "./assets/sillonCopacabana.png",
+    img: "https://ibb.co/DPPRxNFb",
     categoria: "sala",
   },
   {
@@ -67,7 +67,7 @@ const productos = [
     peso: "42 kg",
     cargaMáxima: "25 kg distribuidos",
     precio: 400,
-    img: "./assets/mesaDeCentroAraucaria.png",
+    img: "https://ibb.co/s9kjhSZh",
     categoria: "sala",
   },
   {
@@ -81,7 +81,7 @@ const productos = [
     almacenamiento: "1 cajón + repisa inferior",
     características: "Cajón con cierre suave",
     precio: 600,
-    img: "./assets/mesaDeNocheAconcagua.png",
+    img: "https://ibb.co/FbxhryRR",
     categoria: "dormitorio",
   },
   {
@@ -95,7 +95,7 @@ const productos = [
     colchón: "Compatible con colchón 160×200",
     características: "Cabecero flotante acolchado",
     precio: 2000,
-    img: "./assets/camaNeuquen.png",
+    img: "https://ibb.co/qMFStkDS",
     categoria: "dormitorio",
   },
   {
@@ -109,7 +109,7 @@ const productos = [
     relleno: "Espuma HR + plumón reciclado",
     sostenibilidad: "Materiales 100% reciclables",
     precio: 1800,
-    img: "./assets/sofaPatagonia.png",
+    img: "https://ibb.co/bgmWVDDK",
     categoria: "sala",
   },
   {
@@ -123,7 +123,7 @@ const productos = [
     capacidad: "6-10 comensales",
     extensión: "Sistema de mariposa central",
     precio: 900,
-    img: "./assets/mesaComedorPampa.png",
+    img: "https://ibb.co/CKCTMfJ2",
     categoria: "comedor",
   },
   {
@@ -137,7 +137,7 @@ const productos = [
     apilables: "Hasta 6 sillas",
     incluye: "Set de 4 sillas",
     precio: 300,
-    img: "./assets/sillasCordoba.png",
+    img: "https://ibb.co/vC0mmSY9",
     categoria: "comedor",
   },
   {
@@ -151,7 +151,7 @@ const productos = [
     almacenamiento: "1 cajón con organizador",
     cables: "Pasacables integrado",
     precio: 1100,
-    img: "./assets/escritorioCosta.png",
+    img: "https://ibb.co/bhBjvtJ",
     categoria: "oficina",
   },
   {
@@ -165,7 +165,7 @@ const productos = [
     regulación: "Altura + inclinación respaldo",
     certificación: "Ergonomía europea EN 1335",
     precio: 700,
-    img: "./assets/sillaDeTrabajoBelgrano.png",
+    img: "https://ibb.co/j9D08SV7",
     categoria: "oficina",
   },
 ];

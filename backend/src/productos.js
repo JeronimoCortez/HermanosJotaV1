@@ -1,5 +1,5 @@
 // catalogo de productos
-export const products = [
+export const productos = [
   {
     id: 1,
     nombre: "Aparador Uspallata",
@@ -13,6 +13,15 @@ export const products = [
     precio: 1200,
     img: "https://i.postimg.cc/pXWMvF92/aparador-Uspallata.png",
     categoria: "sala",
+    stock: 10,
+    caracteristicas: [
+      "Construido en nogal macizo certificado FSC®",
+      "Tiradores metálicos en acabado latón",
+      "Acabado con aceite natural ecológico",
+      "6 compartimientos interiores para organización",
+      "Fácil mantenimiento: limpiar con paño seco o ligeramente humedecido",
+      "Diseño minimalista que realza el veteado natural",
+    ],
   },
   {
     id: 2,
@@ -27,6 +36,15 @@ export const products = [
     precio: 1500,
     img: "https://ibb.co/53c14mr",
     categoria: "sala",
+    stock: 7,
+    caracteristicas: [
+      "Estructura metálica en Sage Green de alta resistencia",
+      "Repisas en roble claro de apariencia natural",
+      "5 estantes modulables y ajustables",
+      "Soporta hasta 45 kg por estante",
+      "Acabado en laca mate ecológica resistente",
+      "Ideal para libros, objetos de diseño y colecciones",
+    ],
   },
   {
     id: 3,
@@ -41,6 +59,15 @@ export const products = [
     precio: 1000,
     img: "https://ibb.co/Wv26DMT2",
     categoria: "sala",
+    stock: 5,
+    caracteristicas: [
+      "Tapizado bouclé Dusty Rose, textura lujosa",
+      "Base y estructura en guatambú macizo",
+      "Respaldo curvo ergonómico que abraza el cuerpo",
+      "Relleno con espuma de alta densidad para confort",
+      "Tapizado tratado repelente al agua y manchas",
+      "Acabado en cera vegetal que realza la madera",
+    ],
   },
   {
     id: 4,
@@ -55,6 +82,15 @@ export const products = [
     precio: 1600,
     img: "https://ibb.co/DPPRxNFb",
     categoria: "sala",
+    stock: 3,
+    caracteristicas: [
+      "Tapizado en cuero cognac anilina premium",
+      "Base giratoria 360° con mecanismo silencioso",
+      "Estructura en acero acabado Burnt Sienna",
+      "Diseño inspirado en la estética brasileña de los 60",
+      "Garantía extendida de 10 años en estructura",
+      "Ideal para lounge, lectura y espacios icónicos",
+    ],
   },
   {
     id: 5,
@@ -69,6 +105,15 @@ export const products = [
     precio: 400,
     img: "https://ibb.co/s9kjhSZh",
     categoria: "sala",
+    stock: 8,
+    caracteristicas: [
+      "Sobre circular en mármol Patagonia pulido",
+      "Base de tres patas en nogal macizo",
+      "Combinación de materiales: mármol frío + madera cálida",
+      "Acabado en aceite natural para la madera",
+      "Soporta hasta 25 kg distribuidos",
+      "Diseño minimalista que funciona como punto focal",
+    ],
   },
   {
     id: 6,
@@ -83,6 +128,15 @@ export const products = [
     precio: 600,
     img: "https://ibb.co/FbxhryRR",
     categoria: "dormitorio",
+    stock: 6,
+    caracteristicas: [
+      "Construida en roble macizo certificado FSC®",
+      "Cajón oculto con mecanismo soft-close",
+      "Repisa inferior para almacenaje adicional",
+      "Herrajes y guías ocultas de alta calidad",
+      "Acabado en barniz mate poliuretano resistente",
+      "Diseño compacto y funcional para dormitorios",
+    ],
   },
   {
     id: 7,
@@ -97,6 +151,15 @@ export const products = [
     precio: 2000,
     img: "https://ibb.co/qMFStkDS",
     categoria: "dormitorio",
+    stock: 2,
+    caracteristicas: [
+      "Estructura y patas en roble macizo FSC®",
+      "Cabecero flotante tapizado en lino natural",
+      "Compatible con colchón 160×200",
+      "Acabado en aceite natural que protege la madera",
+      "Tapizado premium con tacto suave",
+      "Diseño minimalista que aporta serenidad al dormitorio",
+    ],
   },
   {
     id: 8,
@@ -111,6 +174,15 @@ export const products = [
     precio: 1800,
     img: "https://ibb.co/bgmWVDDK",
     categoria: "sala",
+    stock: 9,
+    caracteristicas: [
+      "Tapizado en lino natural premium Warm Alabaster",
+      "Estructura en madera de eucalipto certificada FSC®",
+      "Cojines con espuma HR y plumón reciclado",
+      "Patas cónicas de madera que aportan elegancia",
+      "Materiales diseñados para ser reciclables",
+      "Diseño para comodidad y uso prolongado",
+    ],
   },
   {
     id: 9,
@@ -125,6 +197,15 @@ export const products = [
     precio: 900,
     img: "https://ibb.co/CKCTMfJ2",
     categoria: "comedor",
+    stock: 4,
+    caracteristicas: [
+      "Tablero extensible 160–240 cm con sistema mariposa",
+      "Roble macizo certificado FSC® de alta durabilidad",
+      "Mecanismo de apertura suave de origen alemán",
+      "Acabado en aceite-cera natural que realza la veta",
+      "Capacidad para 6 a 10 comensales según extensión",
+      "Diseño robusto pensado para uso familiar y eventos",
+    ],
   },
   {
     id: 10,
@@ -139,6 +220,15 @@ export const products = [
     precio: 300,
     img: "https://ibb.co/vC0mmSY9",
     categoria: "comedor",
+    stock: 10,
+    caracteristicas: [
+      "Asiento y respaldo en contrachapado moldeado de nogal",
+      "Estructura tubular de acero pintada en Sage Green",
+      "Apilables hasta 6 para fácil almacenaje",
+      "Diseño ergonómico para comodidad diaria",
+      "Acabado en laca mate y pintura epoxi resistente",
+      "Vienen en set de 4, ideales para comedores contemporáneos",
+    ],
   },
   {
     id: 11,
@@ -153,6 +243,15 @@ export const products = [
     precio: 1100,
     img: "https://ibb.co/bhBjvtJ",
     categoria: "oficina",
+    stock: 6,
+    caracteristicas: [
+      "Superficie en bambú laminado, sostenible y resistente",
+      "Cajón con organizador para accesorios de escritorio",
+      "Pasacables integrado para gestión ordenada de cables",
+      "Herrajes ocultos que mantienen estética limpia",
+      "Acabado en laca mate de alta resistencia",
+      "Diseño compacto ideal para home office y espacios reducidos",
+    ],
   },
   {
     id: 12,
@@ -167,5 +266,14 @@ export const products = [
     precio: 700,
     img: "https://ibb.co/j9D08SV7",
     categoria: "oficina",
+    stock: 5,
+    caracteristicas: [
+      "Respaldo de malla transpirable para ventilación",
+      "Asiento tapizado en tejido reciclado de alta resistencia",
+      "Regulación de altura y ajuste de inclinación del respaldo",
+      "Apoyo lumbar diseñado para largas jornadas",
+      "Base cromada robusta y estable",
+      "Certificación de ergonomía europea EN 1335",
+    ],
   },
 ];

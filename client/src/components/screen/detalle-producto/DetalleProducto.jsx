@@ -4,7 +4,7 @@ import "./DetalleProducto.css"
 const DetalleProducto = ({ id }) => {
 
   const fecthProductoById = () => {
-    
+
   }
 
   const producto = {
@@ -21,7 +21,7 @@ const DetalleProducto = ({ id }) => {
     img: "https://i.postimg.cc/pXWMvF92/aparador-Uspallata.png",
     categoria: "sala",
     stock: 10,
-    caracteristicas: ["Hecho con nogal macizo FSC®, herrajes de latón", "Acabado de aceite natural ecológico", "6 compartimientos interiores", "Hecho con nogal macizo FSC®, herrajes de latón", "Acabado de aceite natural ecológico", "6 compartimientos interiores"]
+    caracteristicas: ["Hecho con nogal macizo FSC®, herrajes de latón", "Acabado de aceite natural ecológico"]
   }
   return (
     <>

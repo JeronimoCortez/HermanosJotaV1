@@ -25,7 +25,7 @@ const productos = [
     capacidad: "45 kg por estante",
     modulares: "5 estantes ajustables",
     precio: 1500,
-    img: "./assets/bibliotecaRecoleta.png",
+    img: "https://cdn.imgchest.com/files/4cb57f20bd16.png",
     categoria: "sala",
   },
   {
@@ -39,7 +39,7 @@ const productos = [
     tapizado: "Repelente al agua y manchas",
     confort: "Espuma alta densidad",
     precio: 1000,
-    img: "./assets/butacaMendoza.png",
+    img: "https://cdn.imgchest.com/files/ce473fd08d08.png",
     categoria: "sala",
   },
   {

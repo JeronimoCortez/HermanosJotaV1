@@ -4,7 +4,7 @@ const ProductCard = ({ producto, verProductoDetalle }) => {
       className="productos-item"
       onClick={(e) => verProductoDetalle(e, producto.id)}
     >
-      <img src={`/assets/${producto.img}`} alt={producto.nombre} />
+      <img src={producto.img} alt={producto.nombre} />
       <div className="productos-descripcion">
         <h3>{producto.nombre}</h3>
         <p>{`$${producto.precio}`}</p>

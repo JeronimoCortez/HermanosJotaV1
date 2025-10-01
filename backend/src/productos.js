@@ -169,3 +169,5 @@ const productos = [
     categoria: "oficina",
   },
 ];
+
+module.exports = productos;

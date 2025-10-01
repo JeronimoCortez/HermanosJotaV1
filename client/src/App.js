@@ -4,6 +4,7 @@ import { useState } from "react";
 import Navbar from "./components/ui/navbar/Navbar";
 import Contacto from "./components/screen/contacto/Contacto";
 import Footer from "./components/ui/footer/Footer";
+import DetalleProducto from "./components/screen/detalle-producto/DetalleProducto";
 
 function App() {
   const [id, setId] = useState(undefined);
@@ -15,7 +16,7 @@ function App() {
       {pagina === "productos" && (
         <ProductPage setId={setId} setPagina={setPagina} />
       )}
-      {pagina === "detalle" && <h1>{`Viendo producto ${id}`}</h1>}
+      {pagina === "detalle" && <DetalleProducto id={id} />}
       {pagina === "contacto" && <Contacto />}
       <Footer setPagina={setPagina} />
     </div>

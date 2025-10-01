@@ -53,7 +53,7 @@ const productos = [
     rotación: "360° silenciosa y suave",
     garantía: "10 años en estructura",
     precio: 1600,
-    img: "./assets/sillonCopacabana.png",
+    img: "https://cdn.imgchest.com/files/597bfed09300.png",
     categoria: "sala",
   },
   {
@@ -67,7 +67,7 @@ const productos = [
     peso: "42 kg",
     cargaMáxima: "25 kg distribuidos",
     precio: 400,
-    img: "./assets/mesaDeCentroAraucaria.png",
+    img: "https://cdn.imgchest.com/files/aaae98076617.png",
     categoria: "sala",
   },
   {
@@ -81,7 +81,7 @@ const productos = [
     almacenamiento: "1 cajón + repisa inferior",
     características: "Cajón con cierre suave",
     precio: 600,
-    img: "./assets/mesaDeNocheAconcagua.png",
+    img: "https://cdn.imgchest.com/files/b9a323ca47de.png",
     categoria: "dormitorio",
   },
   {
@@ -95,7 +95,7 @@ const productos = [
     colchón: "Compatible con colchón 160×200",
     características: "Cabecero flotante acolchado",
     precio: 2000,
-    img: "./assets/camaNeuquen.png",
+    img: "https://cdn.imgchest.com/files/28d49d90cfad.png",
     categoria: "dormitorio",
   },
   {
@@ -109,7 +109,7 @@ const productos = [
     relleno: "Espuma HR + plumón reciclado",
     sostenibilidad: "Materiales 100% reciclables",
     precio: 1800,
-    img: "./assets/sofaPatagonia.png",
+    img: "https://cdn.imgchest.com/files/e97eb51323b6.png",
     categoria: "sala",
   },
   {
@@ -123,7 +123,7 @@ const productos = [
     capacidad: "6-10 comensales",
     extensión: "Sistema de mariposa central",
     precio: 900,
-    img: "./assets/mesaComedorPampa.png",
+    img: "https://cdn.imgchest.com/files/7508704b4915.png",
     categoria: "comedor",
   },
   {
@@ -137,7 +137,7 @@ const productos = [
     apilables: "Hasta 6 sillas",
     incluye: "Set de 4 sillas",
     precio: 300,
-    img: "./assets/sillasCordoba.png",
+    img: "https://cdn.imgchest.com/files/77d5329c0606.png",
     categoria: "comedor",
   },
   {
@@ -151,7 +151,7 @@ const productos = [
     almacenamiento: "1 cajón con organizador",
     cables: "Pasacables integrado",
     precio: 1100,
-    img: "./assets/escritorioCosta.png",
+    img: "https://cdn.imgchest.com/files/ce1196f14555.png",
     categoria: "oficina",
   },
   {
@@ -165,7 +165,7 @@ const productos = [
     regulación: "Altura + inclinación respaldo",
     certificación: "Ergonomía europea EN 1335",
     precio: 700,
-    img: "./assets/sillaDeTrabajoBelgrano.png",
+    img: "https://cdn.imgchest.com/files/3d4357b48b3b.png",
     categoria: "oficina",
   },
 ];

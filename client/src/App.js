@@ -1,26 +1,26 @@
 import "./App.css";
-import {BrowserRouter, Routes, Route} from "react-router-dom"
 import ProductPage from "../src/components/screen/productos/ProductPage";
+import { useState } from "react";
 import Navbar from "./components/ui/navbar/Navbar";
 import Contacto from "./components/screen/contacto/Contacto";
 import Footer from "./components/ui/footer/Footer";
+import DetalleProducto from "./components/screen/detalle-producto/DetalleProducto";
 import HomePage from "./components/screen/homePage/HomePage";
 
 function App() {
+  const [id, setId] = useState(undefined);
+  const [pagina, setPagina] = useState("inicio");
   return (
-    <>
-    <BrowserRouter>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<HomePage/>}></Route>
-
-        <Route path="/catalogo" element={<ProductPage/>}></Route>
-
-        <Route path="/contacto" element={<Contacto/>}></Route>
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
-  </>
+    <div className="App">
+      <Navbar setPagina={setPagina} />
+      {pagina === "inicio" && <HomePage />}
+      {pagina === "productos" && (
+        <ProductPage setId={setId} setPagina={setPagina} />
+      )}
+      {pagina === "detalle" && <DetalleProducto id={id} />}
+      {pagina === "contacto" && <Contacto />}
+      <Footer setPagina={setPagina} />
+    </div>
   );
 }
 

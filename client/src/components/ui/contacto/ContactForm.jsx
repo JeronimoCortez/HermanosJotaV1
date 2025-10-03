@@ -2,25 +2,19 @@ import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-        nombreCompleto: '',
-        email: '',
-        mensaje: ''
-    })
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
+    const [nombreCompleto, setNombreCompleto] = useState('');
+    const [email, setEmail] = useState('');
+    const [mensaje, setMensaje] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const formData = { nombreCompleto, email, mensaje }
         console.log("Datos del formulario: ", formData);
-        toast("✅ Mensaje enviado con éxito")
-        setFormData({ nombreCompleto: '', email: '', mensaje: '' })
+        toast("Mensaje enviado con éxito")
+
+        setNombreCompleto('');
+        setEmail('');
+        setMensaje('');
     }
 
     return (
@@ -40,8 +34,8 @@ const ContactForm = () => {
                         <input
                             type="text"
                             name="nombreCompleto"
-                            value={formData.nombreCompleto}
-                            onChange={handleChange}
+                            value={nombreCompleto}
+                            onChange={(e) => setNombreCompleto(e.target.value)}
                             id="nombreCompleto"
                             placeholder="Nombre Completo"
                             required
@@ -52,8 +46,8 @@ const ContactForm = () => {
                         <input
                             type="email"
                             name="email"
-                            value={formData.email}
-                            onChange={handleChange}
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             id="email"
                             placeholder="correo@correo.com"
                             required
@@ -66,8 +60,8 @@ const ContactForm = () => {
                     <textarea
                         placeholder="Escribe un mensaje"
                         name="mensaje"
-                        value={formData.mensaje}
-                        onChange={handleChange}
+                        value={mensaje}
+                        onChange={(e) => setMensaje(e.target.value)}
                         id="mensaje"
                         required
                     ></textarea>

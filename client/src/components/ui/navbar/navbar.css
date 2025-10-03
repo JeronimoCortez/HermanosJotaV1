@@ -114,6 +114,9 @@ header > div {
   height: auto;
   max-width: 40px;
 }
+.nav-link {
+  text-transform: capitalize;
+}
 
 @media (min-width: 1024px) {
   .btn-comprar {

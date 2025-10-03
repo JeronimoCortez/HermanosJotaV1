@@ -1,8 +1,8 @@
-import { products } from "./productos";
+import { productos } from "./productos.js";
 
 export const getProducts = (req, res) => {
   try {
-    return res.status(200).json(products);
+    return res.status(200).json(productos);
   } catch (error) {
     return res.status(500).json({ message: "Error al obtener los productos" });
   }
@@ -11,7 +11,7 @@ export const getProducts = (req, res) => {
 export const getProductById = (req, res) => {
   try {
     const { id } = req.params;
-    const product = products.find((p) => p.id === Number(id));
+    const product = productos.find((p) => p.id === Number(id));
 
     if (!product) {
       res.status(404).json({ message: `No se encotro producto con id: ${id}` });

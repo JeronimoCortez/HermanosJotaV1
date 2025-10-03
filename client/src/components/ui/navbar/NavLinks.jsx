@@ -1,22 +1,13 @@
-import {Link} from 'react-router-dom'
-
-const LINKS = [
-  { name: "Inicio", path: "/" },
-  { name: "Productos", path: "/catalogo" }, 
-  { name: "Contacto", path: "/contacto" }
-];
-
-const NavLinks = () => { 
+const LINKS = ["inicio", "productos", "contacto"];
+const NavLinks = ({ mostrarPagina }) => {
   return (
-      <ul>
-          {LINKS.map((item, i) => (
-              <li key={i}> 
-                  <Link to={item.path} className="nav-link-style">
-                      {item.name} 
-                  </Link>
-              </li>
-          ))}
-      </ul>
+    <ul>
+      {LINKS.map((link, i) => (
+        <li className="nav-link" key={i} onClick={() => mostrarPagina(link)}>
+          {link}
+        </li>
+      ))}
+    </ul>
   );
 };
 

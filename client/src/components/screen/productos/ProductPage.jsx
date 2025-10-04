@@ -58,10 +58,8 @@ const ProductPage = ({ loading, setPagina, setId }) => {
   }
 
   function verProductoDetalle(e, id) {
-    if (!e.target.classList.contains("ver-btn")) {
-      setId(id);
-      setPagina("detalle");
-    }
+    setId(id);
+    setPagina("detalle");
   }
 
   return (

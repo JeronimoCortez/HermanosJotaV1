@@ -7,10 +7,8 @@ const ProductosDestacados = ({ setPagina, setId }) => {
   const [productos, setProductos] = useState([]);
 
   function verProductoDetalle(e, id) {
-    if (!e.target.classList.contains("ver-btn")) {
-      setId(id);
-      setPagina("detalle");
-    }
+    setId(id);
+    setPagina("detalle");
   }
 
   useEffect(() => {

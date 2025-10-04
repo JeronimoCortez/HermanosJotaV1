@@ -1,26 +1,33 @@
-import { productos } from "./productos.js";
+const { productos } = require("./productos");
 
-export const getProducts = (req, res) => {
+const getProducts = (req, res, next) => {
   try {
     return res.status(200).json(productos);
-  } catch (error) {
-    return res.status(500).json({ message: "Error al obtener los productos" });
+  } catch (err) {
+    const error = new Error("Error al obtener los productos");
+    error.status = 400;
+    next(error);
   }
 };
 
-export const getProductById = (req, res) => {
+const getProductById = (req, res, next) => {
   try {
     const { id } = req.params;
     const product = productos.find((p) => p.id === Number(id));
 
     if (!product) {
-      res.status(404).json({ message: `No se encotro producto con id: ${id}` });
+      const error = new Error(`No se encotro producto con id: ${id}`);
+      error.status = 404;
+      next(error);
       return;
     }
 
     return res.status(200).json(product);
-  } catch (error) {
-    console.error("ERROR: ", error);
-    return res.status(500).json({ message: "Error al obtener los productos" });
+  } catch (err) {
+    const error = new Error("Error al obtener los productos");
+    error.status = 500;
+    next(error);
   }
 };
+
+module.exports = { getProducts, getProductById };

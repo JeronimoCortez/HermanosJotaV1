@@ -100,4 +100,7 @@
     margin: 0;
     width: 100%;
   }
+  .producto-caracteristicas ul li {
+    max-width: 20vw;
+  }
 }

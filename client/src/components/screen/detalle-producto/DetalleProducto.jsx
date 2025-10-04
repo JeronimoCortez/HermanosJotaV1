@@ -12,6 +12,7 @@ const DetalleProducto = ({ id }) => {
       setLoading(true);
       const response = await fetch(`http://localhost:3001/api/productos/${id}`);
       const data = await response.json();
+      console.log(data);
 
       setProducto(data);
       setLoading(false);
@@ -26,6 +27,17 @@ const DetalleProducto = ({ id }) => {
     console.log("useEffect ejecutado, id:", id);
     fecthProductoById(id);
   }, [id]);
+
+  useEffect(() => {
+    setImageLoaded(false);
+    let timer = setTimeout(() => {
+      if (!imageLoaded) {
+        setImageLoaded(true);
+      }
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [producto?.img]);
 
   if (loading) {
     return <p>Cargando producto...</p>;
@@ -49,6 +61,10 @@ const DetalleProducto = ({ id }) => {
             src={producto.img}
             alt={producto.nombre}
             onLoad={() => setImageLoaded(true)}
+            onError={() => {
+              console.error("Error al cargar la imagen:", producto.img);
+              setImageLoaded(true);
+            }}
             style={{ display: imageLoaded ? "block" : "none" }}
           />
           <div className="producto-info">

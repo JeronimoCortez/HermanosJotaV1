@@ -1,8 +1,8 @@
 import HeroBanner from "../../ui/hero-banner/HeroBanner";
-import ProductosDestacados from "../../ui/destacados/destacados";
+import ProductosDestacados from "../../ui/destacados/Destacados";
 import "./HomePage.css";
 
-function HomePage({ setPagina, setId }) {
+const HomePage = ({ setPagina, setId }) => {
   return (
     <>
       <HeroBanner
@@ -14,6 +14,6 @@ function HomePage({ setPagina, setId }) {
       <ProductosDestacados setId={setId} setPagina={setPagina} />
     </>
   );
-}
+};
 
 export default HomePage;

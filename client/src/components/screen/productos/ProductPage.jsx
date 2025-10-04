@@ -10,10 +10,6 @@ const ProductPage = ({ loading, setPagina, setId }) => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
-    setProductosFiltrados(productos);
-  }, []);
-
-  useEffect(() => {
     const fetchProductos = async () => {
       try {
         const data = await getProductos();
@@ -25,7 +21,12 @@ const ProductPage = ({ loading, setPagina, setId }) => {
       }
     };
     fetchProductos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    setProductosFiltrados(productos);
+  }, [productos]);
 
   function onFiltrar(categoria, precio) {
     let filtrados = productos.filter((p) => {

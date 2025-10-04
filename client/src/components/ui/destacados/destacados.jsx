@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { getProductos } from "../../../api/productosApi";
 import ProductList from "../productos/ProductList";
-import { useNavigate } from "react-router-dom";
 import "./destacados.css";
 
-function ProductosDestacados({ setPagina, setId }) {
-  // const navigate = useNavigate();
-
-  // const irCatalogo = () => {
-  //   navigate("/catalogo");
-  // };
+const ProductosDestacados = ({ setPagina, setId }) => {
   const [productos, setProductos] = useState([]);
 
   function verProductoDetalle(e, id) {
@@ -43,6 +37,7 @@ function ProductosDestacados({ setPagina, setId }) {
         <ProductList
           productos={productos}
           verProductoDetalle={verProductoDetalle}
+          clase={"destacados"}
         ></ProductList>
       </div>
       <button
@@ -53,6 +48,6 @@ function ProductosDestacados({ setPagina, setId }) {
       </button>
     </section>
   );
-}
+};
 
 export default ProductosDestacados;

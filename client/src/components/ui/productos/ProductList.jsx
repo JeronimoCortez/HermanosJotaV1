@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
 
-const ProductList = ({ productos, verProductoDetalle }) => {
+const ProductList = ({ productos, verProductoDetalle, clase }) => {
   if (!productos) return <div></div>;
   return (
     <>
@@ -14,6 +14,7 @@ const ProductList = ({ productos, verProductoDetalle }) => {
             key={producto.id}
             producto={producto}
             verProductoDetalle={verProductoDetalle}
+            clase={clase}
           />
         ))
       )}

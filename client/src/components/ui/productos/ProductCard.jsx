@@ -1,7 +1,9 @@
-const ProductCard = ({ producto, verProductoDetalle }) => {
+const ProductCard = ({ producto, verProductoDetalle, clase }) => {
   return (
     <article
-      className="productos-item"
+      className={
+        clase === "destacados" ? "productos-item-destacados" : "productos-item"
+      }
       onClick={(e) => verProductoDetalle(e, producto.id)}
     >
       <img src={`${producto.img}`} alt={producto.nombre} />

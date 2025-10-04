@@ -33,7 +33,7 @@ const productos = [
     capacidad: "45 kg por estante",
     modulares: "5 estantes ajustables",
     precio: 1500,
-    img: "https://i.postimg.cc/bwp6Rtts/Biblioteca-Recoleta.png",
+    img: "https://i.postimg.cc/zBL5KYm1/biblioteca-Recoleta.png",
     categoria: "sala",
     stock: 7,
     caracteristicas: [
@@ -56,7 +56,7 @@ const productos = [
     tapizado: "Repelente al agua y manchas",
     confort: "Espuma alta densidad",
     precio: 1000,
-    img: "https://i.postimg.cc/zX5Sm1X4/Butaca-Mendoza.png",
+    img: "https://i.postimg.cc/Z5yr7Crr/butaca-Mendoza.png",
     categoria: "sala",
     stock: 5,
     caracteristicas: [
@@ -79,7 +79,7 @@ const productos = [
     rotación: "360° silenciosa y suave",
     garantía: "10 años en estructura",
     precio: 1600,
-    img: "https://i.postimg.cc/5tZLnhR3/Sill-n-Copacabana.png",
+    img: "https://i.postimg.cc/TYkLXmV0/sillon-Copacabana.png",
     categoria: "sala",
     stock: 3,
     caracteristicas: [
@@ -102,7 +102,7 @@ const productos = [
     peso: "42 kg",
     cargaMáxima: "25 kg distribuidos",
     precio: 400,
-    img: "https://i.postimg.cc/pLSFdNRt/Mesa-de-Centro-Araucaria.png",
+    img: "https://i.postimg.cc/2SF4RgKz/mesa-De-Centro-Araucaria.png",
     categoria: "sala",
     stock: 8,
     caracteristicas: [
@@ -125,7 +125,7 @@ const productos = [
     almacenamiento: "1 cajón + repisa inferior",
     características: "Cajón con cierre suave",
     precio: 600,
-    img: "https://i.postimg.cc/WzsDyT6Z/mesa-De-Noche-Aconcagua.png",
+    img: "https://i.postimg.cc/8kJnvB5h/mesa-De-Noche-Aconcagua.png",
     categoria: "dormitorio",
     stock: 6,
     caracteristicas: [
@@ -148,7 +148,7 @@ const productos = [
     colchón: "Compatible con colchón 160×200",
     características: "Cabecero flotante acolchado",
     precio: 2000,
-    img: "https://i.postimg.cc/pVB5F5PR/cama-Neuquen.pngS",
+    img: "https://i.postimg.cc/W1RD4SkD/cama-Neuquen.png",
     categoria: "dormitorio",
     stock: 2,
     caracteristicas: [
@@ -171,7 +171,7 @@ const productos = [
     relleno: "Espuma HR + plumón reciclado",
     sostenibilidad: "Materiales 100% reciclables",
     precio: 1800,
-    img: "https://i.postimg.cc/L8GJpz31/Sof-Patagonia.png",
+    img: "https://i.postimg.cc/W3npwLSB/sofa-Patagonia.png",
     categoria: "sala",
     stock: 9,
     caracteristicas: [
@@ -194,7 +194,7 @@ const productos = [
     capacidad: "6-10 comensales",
     extensión: "Sistema de mariposa central",
     precio: 900,
-    img: "https://i.postimg.cc/j542PB0J/Mesa-Comedor-Pampa.png",
+    img: "https://i.postimg.cc/FRPptw1z/mesa-Comedor-Pampa.png",
     categoria: "comedor",
     stock: 4,
     caracteristicas: [
@@ -217,7 +217,7 @@ const productos = [
     apilables: "Hasta 6 sillas",
     incluye: "Set de 4 sillas",
     precio: 300,
-    img: "https://i.postimg.cc/zXBvHddJ/Sillas-C-rdoba.png",
+    img: "https://i.postimg.cc/hPMxPNB0/sillas-Cordoba.png",
     categoria: "comedor",
     stock: 10,
     caracteristicas: [
@@ -240,7 +240,7 @@ const productos = [
     almacenamiento: "1 cajón con organizador",
     cables: "Pasacables integrado",
     precio: 1100,
-    img: "https://i.postimg.cc/wjRB01YM/Escritorio-Costa.png",
+    img: "https://i.postimg.cc/PJTjcppd/escritorio-Costa.png",
     categoria: "oficina",
     stock: 6,
     caracteristicas: [
@@ -263,7 +263,7 @@ const productos = [
     regulación: "Altura + inclinación respaldo",
     certificación: "Ergonomía europea EN 1335",
     precio: 700,
-    img: "https://i.postimg.cc/JnM4rKDV/Silla-de-Trabajo-Belgrano.png",
+    img: "https://i.postimg.cc/GtwPGD7K/silla-De-Trabajo-Belgrano.png",
     categoria: "oficina",
     stock: 5,
     caracteristicas: [

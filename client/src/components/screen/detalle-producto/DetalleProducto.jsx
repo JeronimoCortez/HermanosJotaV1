@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import Contador from "../../ui/contador/Contador";
 import "./DetalleProducto.css";
 
-const DetalleProducto = ({ id }) => {
+const DetalleProducto = ({ id, sumarAlCarrito }) => {
   const [producto, setProducto] = useState(null);
   const [loading, setLoading] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [contador, setContador] = useState(1);
 
   const fecthProductoById = async (id) => {
     if (id) {
@@ -73,10 +74,19 @@ const DetalleProducto = ({ id }) => {
             <p>{producto.descripcion}</p>
             <div className="cantidad">
               <p>Cantidad: </p>
-              <Contador max={producto.stock} />
+              <Contador
+                max={producto.stock}
+                contador={contador}
+                setContador={setContador}
+              />
             </div>
 
-            <button className="btn-compra">Comprar</button>
+            <button
+              className="btn-compra"
+              onClick={() => sumarAlCarrito(producto, contador)}
+            >
+              Comprar
+            </button>
           </div>
         </div>
         <div className="producto-caracteristicas">

@@ -1,30 +1,25 @@
-import { useState } from "react";
-import "./Contador.css"
+import "./Contador.css";
 
-const Contador = ({max}) => {
-  const [contador, setContador] = useState(1)
-
-  const sumarContador = () => {
+const Contador = ({ max, contador, setContador }) => {
+  function sumarContador() {
     if (contador < max) {
-      setContador(contador+1)
-    } else{
-
+      setContador(contador + 1);
     }
   }
 
-  const restarContador = () => {
+  function restarContador() {
     if (contador > 1) {
-      setContador(contador-1)
-    } else{
-
+      setContador(contador - 1);
     }
   }
 
-  return <div className="contador">
-    <button onClick={() => restarContador()}>-</button>
-    <p>{contador}</p>
-    <button onClick={() => sumarContador()}>+</button>
-  </div>;
+  return (
+    <div className="contador">
+      <button onClick={restarContador}>-</button>
+      <p>{contador}</p>
+      <button onClick={sumarContador}>+</button>
+    </div>
+  );
 };
 
 export default Contador;

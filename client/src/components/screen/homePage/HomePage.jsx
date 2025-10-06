@@ -1,5 +1,5 @@
 import HeroBanner from "../../ui/hero-banner/HeroBanner";
-import ProductosDestacados from "../../ui/destacados/Destacados";
+import ProductosDestacados from "../../ui/destacados/destacados";
 import "./HomePage.css";
 
 const HomePage = ({ setPagina, setId }) => {

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-
 import "./DetalleProducto.css";
-import Contador from "../../ui/contador/contador";
+import Contador from "../../ui/contador/Contador.jsx";
 
 const DetalleProducto = ({ id, sumarAlCarrito }) => {
   const [producto, setProducto] = useState(null);
